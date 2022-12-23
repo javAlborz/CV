@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+
+import os
+import sys
+
+# Set up the basic HTML structure
+html_str = """
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,6 +46,7 @@
         left: 0;
         width: 100%;
         height: 200px; /* adjust the height of the banner as desired */
+        background-image: url("C:/Users/albor/webdev/caroline2.jpg");
         background-size: contain;
       }
       .bottom-banner {
@@ -47,6 +55,7 @@
         left: 0;
         width: 100%;
         height: 200px; /* adjust the height of the banner as desired */
+        background-image: url("C:/Users/albor/webdev/caroline.jpg");
         background-size: contain;
         z-index: -1;
       }
@@ -56,14 +65,14 @@
     </style>
   </head>
   <body>
-    <div class="banner banner-image"></div>
+    <div class="banner"></div>
     <div class="content">
       <div>
         <span class="heart">❤</span>
         <span class="flash">Jeg liker DIG Caroline</span>
         <span class="heart">❤</span>
       </div>
-      <img src="src="images/present.png" class="present" onclick="showSpotifyTrack()" alt="Present">
+      <img src="C:/Users/albor/webdev/present.png" class="present" onclick="showSpotifyTrack()" alt="Present">
       <div class="spotify-track">
         <iframe src="https://open.spotify.com/embed/track/0D1XO1D1RHuQwQ65yO6YbH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
@@ -74,22 +83,14 @@
     function showSpotifyTrack() {
       document.querySelector('.spotify-track').style.display = 'block';
     }
-  
-    const banner = document.querySelector('.banner-image');
-    let imageIndex = 0;
-    const images = [
-      'src="images/caroline2.jpg',
-      'src="images/caroline.jpg'
-    ];
-  
-    function switchBanner() {
-      banner.style.backgroundImage = `url(${images[imageIndex]})`;
-      imageIndex = (imageIndex + 1) % images.length;
-    }
-  
-    // Switch the banner every 5 seconds
-    setInterval(switchBanner, 1000);
   </script>
-  
-  
 </html>
+
+"""
+
+# Create the HTML file
+html_file = open('index.html', 'w', encoding="utf-8")
+html_file.write(html_str)
+html_file.close()
+
+print('Website generated successfully!')
