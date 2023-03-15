@@ -65,7 +65,7 @@
       </div>
       <img src="C:/Users/albor/webdev/present.png" class="present" onclick="showSpotifyTrack()" alt="Present">
       <div class="spotify-track">
-        <iframe src="https://open.spotify.com/embed/track/0D1XO1D1RHuQwQ65yO6YbH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/track/1Jwc3ODLQxtbnS8M9TflSP?si=9a6603748b8e4d1b&nd=1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </div>
     <div class="bottom-banner"></div>
