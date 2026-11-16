@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CV</title>
+  <title>CV — Alborz Hajavi</title>
   <style>
     body {
       display: flex;
@@ -19,12 +19,12 @@
   </style>
 </head>
 <body>
-  <!-- Using embed tag -->
-  <embed src="CV.pdf" type="application/pdf" class="pdf-viewer">
+  <nav aria-label="CV links" style="position:fixed;top:1rem;left:1rem;right:1rem;text-align:center;font-family:system-ui,sans-serif">
+    <a href="https://alborz.hajavi.com/cv/">Web CV</a> · <a href="CV.pdf" download="alborz-hajavi-cv.pdf">Download PDF</a>
+  </nav>
+  <object data="CV.pdf" type="application/pdf" class="pdf-viewer" aria-label="Alborz Hajavi CV">
+    <p><a href="https://alborz.hajavi.com/cv/">Read the web CV</a> or <a href="CV.pdf">download the PDF</a>.</p>
+  </object>
 
-  <!-- Or using object tag -->
-  <!-- <object data="path-to-your-cv.pdf" type="application/pdf" class="pdf-viewer">
-    <p>It seems like your browser doesn't support PDF viewing. You can <a href="path-to-your-cv.pdf">download my CV here</a>.</p>
-  </object> -->
 </body>
 </html>
